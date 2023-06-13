@@ -1,0 +1,38 @@
+.heading__primary {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: $cc-primary-dark;
+  text-transform: uppercase;
+  line-height: 1.75rem;
+  margin-bottom: 1.25rem;
+
+  span {
+    font-family: $ff-accent;
+    font-weight: 400;
+    color: $cc-primary;
+    text-transform: lowercase;
+  }
+}
+
+.content {
+  font-size: $f-default-size;
+}
+
+.header {
+  p {
+    padding: 0 16%;
+  }
+}
+
+.banner {
+  &__content {
+    &--detail-date {
+      font-weight: $fw-bold;
+      margin-bottom: 0.75rem;
+    }
+
+    &--location {
+      font-weight: $fw-extrabold;
+    }
+  }
+}

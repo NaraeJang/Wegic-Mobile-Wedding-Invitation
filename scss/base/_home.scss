@@ -1,0 +1,13 @@
+.header {
+  width: 100%;
+  background: url(/dist/images/heading-deco.svg) no-repeat top/100%;
+  //   background-size: 100vw;
+  margin: 0;
+}
+
+.banner {
+  &__img {
+    height: auto;
+    width: 100%;
+  }
+}
