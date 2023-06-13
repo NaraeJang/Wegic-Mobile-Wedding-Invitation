@@ -1,0 +1,23 @@
+{
+  "name": "02-wegic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css -recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaraeJang/Wegic-Mobile-Wedding-Invitation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaraeJang/Wegic-Mobile-Wedding-Invitation/issues"
+  },
+  "homepage": "https://github.com/NaraeJang/Wegic-Mobile-Wedding-Invitation#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
