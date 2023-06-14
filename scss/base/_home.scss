@@ -84,3 +84,37 @@
     }
   }
 }
+
+.schedule {
+  background-color: $cc-bg-olive;
+
+  &__heading {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+
+    &__img {
+      width: 2.9rem;
+    }
+  }
+
+  &__content {
+    ul {
+      li {
+        span:first-child {
+          width: 35%;
+          display: inline-block;
+          text-align: right;
+          margin-right: 1rem;
+        }
+
+        span:last-child {
+          width: 55%;
+          display: inline-block;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

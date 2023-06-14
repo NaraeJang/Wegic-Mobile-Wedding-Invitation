@@ -64,3 +64,27 @@ p {
   font-size: 0.875rem;
   letter-spacing: 1px;
 }
+
+.schedule {
+  &__heading {
+    h2 {
+      margin: 0 1rem;
+    }
+  }
+  &__content {
+    ul {
+      list-style: none;
+      margin-top: 1rem;
+
+      li {
+        color: $cc-primary-dark;
+        font-size: 1rem;
+        text-transform: capitalize;
+
+        &:not(:last-child) {
+          padding-bottom: 4px;
+        }
+      }
+    }
+  }
+}
