@@ -1,13 +1,86 @@
 .header {
   width: 100%;
   background: url(/dist/images/heading-deco.svg) no-repeat top/100%;
-  //   background-size: 100vw;
   margin: 0;
+  padding-bottom: 3.125rem;
+  position: relative;
+
+  &__container {
+    padding: 0 1rem;
+  }
+
+  &__language {
+    position: absolute;
+    padding: 5px 8px;
+    background: $cc-bg-main;
+    border-radius: 100%;
+    top: 1rem;
+    right: 1rem;
+    text-decoration: none;
+
+    cursor: pointer;
+    box-shadow: 0 0 0.75rem rgba($cc-primary-dark, 0.4);
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $cc-primary-dark;
+      color: $cc-bg-main;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
 }
 
 .banner {
   &__img {
     height: auto;
     width: 100%;
+  }
+}
+
+.section-divider {
+  text-align: center;
+
+  &__img {
+    width: 71px;
+    margin: 0 auto;
+  }
+}
+
+.contact {
+  &__content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+
+    h4 {
+      height: auto;
+      margin: 0.47rem 1.25rem auto 0;
+    }
+
+    a,
+    a:link,
+    a:visited {
+      color: $cc-primary;
+
+      i {
+        font-size: 1rem;
+        padding: 0.5625rem;
+        transition: all 0.2s;
+
+        &:hover {
+          color: darken($cc-primary, 0.2);
+          transform: scale(1.05) translateY(-2px);
+        }
+
+        &:active {
+          transform: translateY(0);
+          color: $cc-primary-dark;
+        }
+      }
+    }
   }
 }

@@ -1,3 +1,16 @@
+h2 {
+  color: $cc-primary-dark;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.75rem;
+  font-size: $f-default-size;
+  padding: 0 1.5rem;
+}
+
 .heading__primary {
   font-size: 1.5rem;
   font-weight: 800;
@@ -22,10 +35,19 @@
   p {
     padding: 0 16%;
   }
+
+  &__language {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: $fw-bold;
+    color: $cc-primary-dark;
+  }
 }
 
 .banner {
   &__content {
+    font-size: 0.875rem;
+
     &--detail-date {
       font-weight: $fw-bold;
       margin-bottom: 0.75rem;
@@ -35,4 +57,10 @@
       font-weight: $fw-extrabold;
     }
   }
+}
+
+.contact {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
 }
