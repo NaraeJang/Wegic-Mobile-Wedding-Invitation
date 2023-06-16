@@ -170,6 +170,26 @@
   }
 }
 
+.wedding-party {
+  &__profiles {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    &--detail {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+
+      img {
+        max-width: 171px;
+        margin: 0 auto 1rem auto;
+      }
+    }
+  }
+}
+
 .gift-registry {
   &__content {
     a:last-child {

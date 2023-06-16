@@ -108,6 +108,28 @@ p {
   }
 }
 
+.wedding-party {
+  &__profiles {
+    cursor: pointer;
+    &--detail {
+      line-height: 1.125rem;
+
+      h4 {
+        color: $cc-primary-dark;
+        text-transform: uppercase;
+        font-weight: $fw-bold;
+        font-size: 0.875rem;
+      }
+
+      h5 {
+        font-size: 0.75rem;
+        color: $cc-primary;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
 .gift-registry {
   &__content {
     p {
