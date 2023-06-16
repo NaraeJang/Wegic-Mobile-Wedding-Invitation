@@ -54,6 +54,8 @@ p {
 .banner {
   &__content {
     font-size: 0.875rem;
+    text-transform: uppercase;
+    line-height: 1.5rem;
 
     &--detail-date {
       font-weight: $fw-bold;

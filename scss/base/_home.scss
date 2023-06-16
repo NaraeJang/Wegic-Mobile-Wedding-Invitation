@@ -235,6 +235,12 @@ footer {
 
   .link {
     margin-bottom: 0.6rem;
+    transition: all 0.2s;
+
+    &:active,
+    &:hover {
+      color: lighten($color: $cc-primary, $amount: 20%);
+    }
   }
   a i {
     padding-right: 1rem;
