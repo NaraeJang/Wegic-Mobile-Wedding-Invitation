@@ -227,3 +227,16 @@
     }
   }
 }
+
+footer {
+  background-color: $cc-bg-olive;
+  color: $cc-primary-dark;
+  box-shadow: 3px 0 20px rgba($cc-primary-dark, 0.05);
+
+  .link {
+    margin-bottom: 0.6rem;
+  }
+  a i {
+    padding-right: 1rem;
+  }
+}

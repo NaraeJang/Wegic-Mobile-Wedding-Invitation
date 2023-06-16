@@ -166,3 +166,19 @@ p {
     }
   }
 }
+
+footer {
+  a,
+  a:link,
+  a:visited {
+    color: $cc-primary-dark;
+    text-decoration: none;
+    font-weight: $fw-bold;
+  }
+  p {
+    span {
+      font-weight: $fw-bold;
+      font-size: 0.75rem;
+    }
+  }
+}
