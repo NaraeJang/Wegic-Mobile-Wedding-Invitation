@@ -5,6 +5,13 @@ h2 {
   margin-bottom: 1rem;
 }
 
+h5 {
+  font-size: 1.125rem;
+  font-weight: $fw-bold;
+  text-transform: capitalize;
+  color: $cc-primary-dark;
+}
+
 p {
   line-height: 1.75rem;
   font-size: $f-default-size;
@@ -56,6 +63,17 @@ p {
     &--location {
       font-weight: $fw-extrabold;
     }
+  }
+}
+
+.our-story__popup__page {
+  &__heading {
+    text-align: center;
+  }
+
+  &__content p {
+    text-align: left;
+    line-height: 200%;
   }
 }
 
