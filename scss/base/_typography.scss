@@ -133,3 +133,14 @@ p {
     }
   }
 }
+
+.live-wedding {
+  &__content {
+    h6 {
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      font-weight: $fw-bold;
+      color: $cc-primary-dark;
+    }
+  }
+}
