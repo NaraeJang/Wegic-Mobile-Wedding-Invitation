@@ -60,10 +60,10 @@
   place-items: center;
   visibility: hidden;
   z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
 
   &__page {
-    overflow-y: auto;
-    overflow-x: hidden;
     border-radius: 0.75rem;
     margin: auto;
     height: auto;
@@ -170,17 +170,30 @@
   }
 }
 
+.gift-registry {
+  &__content {
+    a:last-child {
+      margin-top: 1rem;
+    }
+  }
+}
+
 .rsvp {
   background-color: $cc-bg-olive;
 
   &__heading {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    text-align: center;
     justify-content: center;
 
+    h2 {
+      line-height: 100%;
+      margin: auto 1rem;
+    }
+
     &__img {
-      width: 2.9rem;
+      width: 5.75rem;
+      margin: auto;
     }
   }
 }

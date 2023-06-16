@@ -7,9 +7,9 @@
     color: $cc-primary-dark;
     font-weight: $fw-bold;
     font-size: $f-default-size;
-    padding: 0.625rem;
+    padding: 0.35rem;
     display: inline-block;
-    width: 80%;
+    width: 73%;
     margin-top: 2rem;
   }
 
@@ -21,10 +21,11 @@
     background: transparent;
     &:hover {
       box-shadow: 0 0 1.875rem rgba($cc-primary-dark, 0.25);
+      transform: translateY(-2px);
     }
 
     &:active {
-      transform: translateY(3px);
+      transform: translateY(0);
       box-shadow: 0 0 0.625rem rgba($cc-primary-dark, 0.25);
     }
   }
