@@ -14,11 +14,11 @@
   }
 
   &-primary {
+    cursor: pointer;
+    background: transparent;
     border: 1px solid $cc-primary-dark;
     border-radius: 1.5625rem;
     transition: all 0.2s;
-    cursor: pointer;
-    background: transparent;
     &:hover {
       box-shadow: 0 0 1.875rem rgba($cc-primary-dark, 0.25);
       transform: translateY(-2px);

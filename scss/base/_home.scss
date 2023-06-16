@@ -11,7 +11,7 @@
 
   &__language {
     position: absolute;
-    padding: 5px 8px;
+    padding: 0 9px;
     background: $cc-bg-main;
     border-radius: 100%;
     top: 1rem;
@@ -175,6 +175,16 @@
     a:last-child {
       margin-top: 1rem;
     }
+  }
+}
+
+.location {
+  iframe {
+    margin-left: -1rem;
+  }
+  &__content {
+    margin-bottom: 1rem;
+    width: 100%;
   }
 }
 
