@@ -100,6 +100,12 @@
   }
 }
 
+.gallery {
+  & .container {
+    padding: 3.125rem 0;
+  }
+}
+
 .contact {
   &__content {
     display: flex;
@@ -201,10 +207,10 @@
 .location {
   iframe {
     margin-left: -1rem;
+    width: 100%;
   }
   &__content {
     margin-bottom: 1rem;
-    width: 100%;
   }
 }
 
