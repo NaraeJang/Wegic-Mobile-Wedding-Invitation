@@ -19,5 +19,8 @@
   "homepage": "https://github.com/NaraeJang/Wegic-Mobile-Wedding-Invitation#readme",
   "devDependencies": {
     "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "swiper": "^9.4.1"
   }
 }
