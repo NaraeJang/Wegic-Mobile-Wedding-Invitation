@@ -1,0 +1,39 @@
+.wedding-party {
+  .container {
+    padding-top: 6.25rem;
+  }
+  .swiper {
+    height: 100%;
+  }
+  h2 {
+    margin-bottom: 1.75rem;
+  }
+  &__profiles {
+    display: grid;
+    grid-template-columns: auto auto;
+    cursor: grab;
+
+    &--detail {
+      margin: 0 1.5rem 1.5rem 1.5rem;
+
+      img {
+        width: auto;
+      }
+    }
+  }
+}
+
+.swiper-pagination {
+  position: inherit;
+  margin-top: 0.5rem;
+
+  &-bullet {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: darken($cc-primary-light, 0.3);
+
+    &-active {
+      background-color: $cc-primary-light;
+    }
+  }
+}

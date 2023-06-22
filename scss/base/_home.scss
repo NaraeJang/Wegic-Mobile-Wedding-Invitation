@@ -205,11 +205,16 @@
 }
 
 .location {
-  iframe {
-    margin-left: -1rem;
-    width: 100%;
+  .container {
+    padding: 3.125rem 0 6.25rem 0;
+
+    iframe {
+      width: 100%;
+    }
   }
+
   &__content {
+    padding-left: 1rem;
     margin-bottom: 1rem;
   }
 }
@@ -272,6 +277,12 @@
       width: 5.75rem;
       margin: auto;
     }
+  }
+}
+
+.live-wedding {
+  .container {
+    padding-top: 6.25rem;
   }
 }
 
