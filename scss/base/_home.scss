@@ -345,6 +345,39 @@
   }
 }
 
+#comment-form {
+  display: inline-block;
+  width: 100%;
+  label {
+    color: $cc-primary-dark;
+    display: block;
+    margin: 0;
+  }
+  input {
+    width: 100%;
+    border-color: transparent;
+    border-bottom: 1px solid $cc-primary;
+    outline: none;
+    background: transparent;
+    padding-left: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid $cc-primary;
+    outline: none;
+    padding: 0.5rem;
+    background: transparent;
+    border-radius: 0.5rem;
+
+    &::placeholder {
+      color: lighten($cc-primary-light, 20%);
+      padding: 0.25rem;
+    }
+  }
+}
+
 .comment {
   &__header {
     display: flex;

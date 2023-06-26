@@ -12,6 +12,10 @@
 }
 
 // MARGIN
+.mb-small {
+  margin-bottom: 1.25rem;
+}
+
 .m-5 {
   margin: 3.125rem 0;
 }
@@ -46,4 +50,39 @@
 
 .text-align-left {
   text-align: left;
+}
+
+/*
+=============== 
+Alert
+===============
+*/
+
+.alert {
+  padding: 0.875rem 0;
+}
+
+.alert-danger {
+  margin-top: 0.25rem;
+  color: rgb(226, 98, 0);
+  background: rgba(248, 114, 11, 0.156);
+  width: 100%;
+  display: inline-block;
+  border-radius: 2rem;
+  font-size: 0.8125rem;
+  padding-left: 1rem !important;
+}
+
+.alert-success {
+  margin-top: 0.25rem;
+  color: rgb(21, 87, 36);
+  background: rgba(163, 221, 176, 0.457);
+  width: 72%;
+  display: inline-block;
+  border-radius: 2rem;
+  font-size: 0.8125rem;
+}
+
+.obligatory {
+  font-size: 0.75rem;
 }
