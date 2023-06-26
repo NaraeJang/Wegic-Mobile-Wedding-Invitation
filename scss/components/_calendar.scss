@@ -1,0 +1,60 @@
+.calendar {
+  padding-bottom: 1.5rem;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+
+    .sunday {
+      color: $cc-secondary-dark !important;
+    }
+
+    li {
+      position: relative;
+      width: calc(100% / 7);
+      z-index: 1;
+      margin-bottom: 1.25rem;
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      width: 2.5rem;
+      height: 2.5rem;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      border-radius: 100%;
+    }
+
+    &.weeks li {
+      text-transform: capitalize;
+      color: $cc-primary-dark;
+    }
+
+    &.days li {
+      &.active {
+        color: $cc-white;
+        &::before {
+          background: $cc-primary-light;
+        }
+
+        &.sunday {
+          color: $cc-secondary-dark;
+        }
+      }
+
+      &.inactive {
+        color: lighten($cc-primary, 30%);
+      }
+
+      &.inactive.sunday {
+        color: lighten($cc-secondary-dark, 30%) !important;
+      }
+    }
+  }
+}

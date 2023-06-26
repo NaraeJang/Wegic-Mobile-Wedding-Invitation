@@ -24,6 +24,14 @@
   padding: 3.125rem 1rem;
 }
 
+.w-100 {
+  &,
+  &:link,
+  &:visited {
+    width: 100% !important;
+  }
+}
+
 .close-icon {
   cursor: pointer;
   padding: 0.5rem 0.625rem;
@@ -34,4 +42,8 @@
 .show-popup {
   visibility: visible !important;
   z-index: 10 !important;
+}
+
+.text-align-left {
+  text-align: left;
 }
