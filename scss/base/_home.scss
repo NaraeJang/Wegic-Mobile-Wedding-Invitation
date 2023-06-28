@@ -294,11 +294,13 @@
         flex-direction: column;
         text-align: left;
 
-        label {
-          display: inline-block;
-          width: 100%;
-          margin-bottom: 1rem;
-
+        &__name,
+        &__guests--number,
+        &__guests--name {
+          label {
+            display: inline-block;
+            width: 100%;
+          }
           input {
             width: 100%;
             border: none;
@@ -308,7 +310,26 @@
             padding-left: 0.25rem;
             padding-bottom: 0.25rem;
             line-height: 1.5rem;
+            margin-bottom: 1rem;
           }
+        }
+
+        &__meal--group {
+          display: grid;
+          grid-template-areas:
+            "meal-halal meal-vegan"
+            "meal-other meal-other";
+          gap: 1rem;
+        }
+
+        .meal-halal {
+          grid-area: meal-halal;
+        }
+        .meal-vegan {
+          grid-area: meal-vegan;
+        }
+        .meal-other {
+          grid-area: meal-other;
         }
       }
 
@@ -342,6 +363,63 @@
 .live-wedding {
   .container {
     padding-top: 6.25rem;
+  }
+}
+
+.comment-delete-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($cc-primary-dark, 0.4);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &__page {
+    border-radius: 0.75rem;
+    margin: auto;
+    height: auto;
+    max-width: 360px;
+    min-width: 280px;
+
+    min-width: 19rem;
+    background-color: $cc-bg-main;
+
+    padding: 1.75rem;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem 0 0.5rem 0;
+
+    h5 {
+      margin: 0;
+    }
+  }
+
+  &__content {
+    label {
+      color: $cc-primary-dark;
+      display: block;
+      margin: 0;
+      text-align: left;
+    }
+    input {
+      width: 100%;
+      border-color: transparent;
+      border-bottom: 1px solid $cc-primary;
+      outline: none;
+      background: transparent;
+      padding-left: 0.25rem;
+      padding-bottom: 0.25rem;
+    }
   }
 }
 
