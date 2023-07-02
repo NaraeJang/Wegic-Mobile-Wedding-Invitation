@@ -556,7 +556,3 @@ linkElement.addEventListener("click", () => {
       console.error("Failed to copy link: ", error);
     });
 });
-
-function log() {
-  console.log("yo");
-}
