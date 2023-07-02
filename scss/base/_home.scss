@@ -272,7 +272,7 @@
     margin: auto;
     height: auto;
 
-    min-width: 19rem;
+    max-width: 390px;
     background-color: $cc-bg-main;
 
     padding: 1.75rem;
@@ -281,7 +281,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      margin: 0.5rem 0 0.5rem 0;
+      margin: 0.5rem 0 1.5rem 0;
 
       h5 {
         margin: 0;
@@ -297,6 +297,7 @@
         &__name,
         &__guests--number,
         &__guests--name {
+          margin-bottom: 2.5rem;
           label {
             display: inline-block;
             width: 100%;
@@ -310,26 +311,27 @@
             padding-left: 0.25rem;
             padding-bottom: 0.25rem;
             line-height: 1.5rem;
-            margin-bottom: 1rem;
           }
         }
 
         &__meal--group {
           display: grid;
-          grid-template-areas:
-            "meal-halal meal-vegan"
-            "meal-other meal-other";
           gap: 1rem;
+          grid-template-columns: auto auto;
         }
 
-        .meal-halal {
-          grid-area: meal-halal;
+        input[type="radio"] {
+          background: transparent;
+          accent-color: $cc-primary-dark;
         }
-        .meal-vegan {
-          grid-area: meal-vegan;
-        }
-        .meal-other {
-          grid-area: meal-other;
+
+        #rsvp-meal--other {
+          width: 70%;
+          outline: none;
+          background: transparent;
+          border-color: transparent;
+          border-bottom: 1px solid $cc-primary;
+          padding: 0 0.25rem 0.25rem 0;
         }
       }
 
@@ -337,6 +339,13 @@
         padding: 0 0 2rem 0;
       }
     }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  /* Adjust the max-width for smaller screens */
+  .rsvp__popup__page {
+    max-width: 360px; /* Adjust this value to your preference */
   }
 }
 

@@ -60,6 +60,7 @@ Alert
 
 .alert {
   padding: auto;
+  height: 0;
 }
 
 .alert-danger {
@@ -71,6 +72,7 @@ Alert
   border-radius: 2rem;
   font-size: 0.8125rem;
   padding-left: 1rem !important;
+  height: 100%;
 }
 
 .alert-success {
@@ -81,6 +83,7 @@ Alert
   display: inline-block;
   border-radius: 2rem;
   font-size: 0.8125rem;
+  height: 100%;
 }
 
 .obligatory {

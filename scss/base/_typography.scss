@@ -191,6 +191,12 @@ p {
       label {
         color: $cc-primary-dark;
       }
+
+      .rsvp-form__meal {
+        label span {
+          color: $cc-primary;
+        }
+      }
     }
   }
 }
