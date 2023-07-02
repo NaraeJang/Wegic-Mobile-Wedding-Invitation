@@ -1,0 +1,975 @@
+/* line 1, scss/base/_base.scss */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/* line 9, scss/base/_base.scss */
+html {
+  background-color: #f3f3f3; }
+
+/* line 13, scss/base/_base.scss */
+body {
+  box-sizing: border-box;
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: #f6f3ee;
+  color: #7b7047;
+  text-align: center;
+  font-family: "Martel", serif;
+  line-height: 200%;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 26, scss/base/_base.scss */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%; }
+
+/* line 35, scss/base/_base.scss */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* line 42, scss/base/_base.scss */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word; }
+
+/* line 52, scss/base/_base.scss */
+#root,
+#__next {
+  isolation: isolate; }
+
+/* line 1, scss/base/_typography.scss */
+h2 {
+  color: #414223;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem; }
+
+/* line 8, scss/base/_typography.scss */
+h5 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #414223; }
+
+/* line 15, scss/base/_typography.scss */
+p {
+  line-height: 1.75rem;
+  font-size: 0.875rem;
+  padding: 0 1.5rem; }
+
+/* line 21, scss/base/_typography.scss */
+.heading__primary {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #414223;
+  text-transform: uppercase;
+  line-height: 1.75rem;
+  margin-bottom: 1.25rem; }
+  /* line 29, scss/base/_typography.scss */
+  .heading__primary span {
+    font-family: "Mr De Haviland", cursive;
+    font-weight: 400;
+    color: #7b7047;
+    text-transform: lowercase; }
+
+/* line 37, scss/base/_typography.scss */
+.content {
+  font-size: 0.875rem; }
+
+/* line 42, scss/base/_typography.scss */
+.header p {
+  padding: 0 16%; }
+
+/* line 46, scss/base/_typography.scss */
+.header__language {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #414223; }
+
+/* line 55, scss/base/_typography.scss */
+.banner__content {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  line-height: 1.5rem; }
+  /* line 60, scss/base/_typography.scss */
+  .banner__content--detail-date {
+    font-weight: 700;
+    margin-bottom: 0.75rem; }
+  /* line 65, scss/base/_typography.scss */
+  .banner__content--location {
+    font-weight: 800; }
+
+/* line 72, scss/base/_typography.scss */
+.our-story__popup__page__heading {
+  text-align: center; }
+
+/* line 76, scss/base/_typography.scss */
+.our-story__popup__page__content p {
+  text-align: left;
+  line-height: 200%; }
+
+/* line 82, scss/base/_typography.scss */
+.contact {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  line-height: 1.75; }
+
+/* line 91, scss/base/_typography.scss */
+.calendar-section .container h6 {
+  text-transform: uppercase;
+  color: #414223;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 0.825rem; }
+
+/* line 99, scss/base/_typography.scss */
+.calendar-section .container .d-day {
+  padding: 0.25rem 1rem;
+  gap: 0.25rem;
+  color: #f6f3ee;
+  background-color: #978c63;
+  display: inline-block;
+  border-radius: 1.25rem; }
+
+/* line 110, scss/base/_typography.scss */
+.calendar-section ul.weeks {
+  font-weight: 700; }
+
+/* line 118, scss/base/_typography.scss */
+.schedule__heading h2 {
+  margin: 0 1rem; }
+
+/* line 123, scss/base/_typography.scss */
+.schedule__content ul {
+  list-style: none;
+  margin-top: 1rem; }
+  /* line 127, scss/base/_typography.scss */
+  .schedule__content ul li {
+    color: #414223;
+    font-size: 1rem;
+    text-transform: capitalize; }
+    /* line 132, scss/base/_typography.scss */
+    .schedule__content ul li:not(:last-child) {
+      padding-bottom: 4px; }
+
+/* line 141, scss/base/_typography.scss */
+.wedding-party__profiles {
+  cursor: pointer; }
+  /* line 143, scss/base/_typography.scss */
+  .wedding-party__profiles--detail {
+    line-height: 1.125rem; }
+    /* line 146, scss/base/_typography.scss */
+    .wedding-party__profiles--detail h4 {
+      color: #414223;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.875rem; }
+    /* line 153, scss/base/_typography.scss */
+    .wedding-party__profiles--detail h5 {
+      font-size: 0.75rem;
+      color: #7b7047;
+      text-transform: capitalize; }
+
+/* line 164, scss/base/_typography.scss */
+.gift-registry__content p {
+  padding: 0 0.5rem; }
+
+/* line 171, scss/base/_typography.scss */
+.location__content {
+  text-align: left; }
+  /* line 173, scss/base/_typography.scss */
+  .location__content h4 {
+    color: #414223;
+    text-transform: uppercase; }
+  /* line 178, scss/base/_typography.scss */
+  .location__content p {
+    padding: 0; }
+  /* line 182, scss/base/_typography.scss */
+  .location__content--name {
+    margin-bottom: 1rem; }
+
+/* line 191, scss/base/_typography.scss */
+.rsvp__popup__page__content label {
+  color: #414223; }
+
+/* line 196, scss/base/_typography.scss */
+.rsvp__popup__page__content .rsvp-form__meal label span {
+  color: #7b7047; }
+
+/* line 205, scss/base/_typography.scss */
+.rsvp--second h4 {
+  font-size: 1.125rem;
+  color: #414223;
+  margin-bottom: 1rem;
+  line-height: 1.125rem; }
+
+/* line 212, scss/base/_typography.scss */
+.rsvp--second p {
+  font-size: 0.875rem;
+  line-height: 0.875rem; }
+
+/* line 220, scss/base/_typography.scss */
+.live-wedding__content h6 {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #414223; }
+
+/* line 230, scss/base/_typography.scss */
+.comment p {
+  padding: 0; }
+
+/* line 234, scss/base/_typography.scss */
+.comment__header__main--date {
+  font-size: 0.75rem; }
+
+/* line 237, scss/base/_typography.scss */
+.comment__header__main--name {
+  color: #414223;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem; }
+
+/* line 244, scss/base/_typography.scss */
+.comment__body {
+  line-height: 150%;
+  font-size: 1rem; }
+
+/* line 250, scss/base/_typography.scss */
+#comment-form {
+  text-transform: capitalize; }
+
+/* line 255, scss/base/_typography.scss */
+footer a,
+footer a:link,
+footer a:visited {
+  color: #414223;
+  text-decoration: none;
+  font-weight: 700; }
+
+/* line 263, scss/base/_typography.scss */
+footer p span:last-child {
+  font-weight: 700;
+  font-size: 0.75rem; }
+
+/* line 2, scss/base/_utilities.scss */
+.p-5 {
+  padding: 3.125rem 0; }
+
+/* line 6, scss/base/_utilities.scss */
+.pt-8 {
+  padding-top: 5rem; }
+
+/* line 10, scss/base/_utilities.scss */
+.pb-5 {
+  padding-bottom: 3.125rem; }
+
+/* line 15, scss/base/_utilities.scss */
+.mb-small {
+  margin-bottom: 1.25rem; }
+
+/* line 19, scss/base/_utilities.scss */
+.m-5 {
+  margin: 3.125rem 0; }
+
+/* line 22, scss/base/_utilities.scss */
+.mb-5 {
+  margin-bottom: 3.125rem; }
+
+/* line 26, scss/base/_utilities.scss */
+.container {
+  width: 100%;
+  padding: 3.125rem 1rem; }
+
+/* line 32, scss/base/_utilities.scss */
+.w-100, .w-100:link, .w-100:visited {
+  width: 100% !important; }
+
+/* line 39, scss/base/_utilities.scss */
+.close-icon {
+  cursor: pointer;
+  padding: 0.5rem 0.625rem;
+  margin-top: -0.625rem;
+  margin-right: -0.5rem; }
+
+/* line 46, scss/base/_utilities.scss */
+.show-popup {
+  visibility: visible !important;
+  z-index: 10 !important; }
+
+/* line 51, scss/base/_utilities.scss */
+.text-align-left {
+  text-align: left; }
+
+/*
+=============== 
+Alert
+===============
+*/
+/* line 61, scss/base/_utilities.scss */
+.alert {
+  padding: auto;
+  height: 0; }
+
+/* line 66, scss/base/_utilities.scss */
+.alert-danger {
+  margin-top: 0.25rem;
+  color: #e26200;
+  background: rgba(248, 114, 11, 0.156);
+  width: 100%;
+  display: inline-block;
+  border-radius: 2rem;
+  font-size: 0.8125rem;
+  padding-left: 1rem !important;
+  height: 100%; }
+
+/* line 78, scss/base/_utilities.scss */
+.alert-success {
+  margin-top: 0.25rem;
+  color: #155724;
+  background: rgba(163, 221, 176, 0.457);
+  width: 72%;
+  display: inline-block;
+  border-radius: 2rem;
+  font-size: 0.8125rem;
+  height: 100%; }
+
+/* line 89, scss/base/_utilities.scss */
+.obligatory {
+  font-size: 0.75rem; }
+
+/* line 93, scss/base/_utilities.scss */
+.comment-divider {
+  display: inline-block;
+  width: 100%;
+  height: 2rem;
+  border-bottom: 1px solid #cbc5af;
+  margin-bottom: 2rem; }
+
+/* line 1, scss/base/_home.scss */
+.header {
+  width: 100%;
+  background: url(/dist/images/heading-deco.svg) no-repeat top/100%;
+  margin: 0;
+  padding-bottom: 3.125rem;
+  position: relative; }
+  /* line 8, scss/base/_home.scss */
+  .header__container {
+    padding: 0 1rem; }
+  /* line 12, scss/base/_home.scss */
+  .header__language {
+    position: absolute;
+    padding: 0 9px;
+    background: #f6f3ee;
+    border-radius: 100%;
+    top: 1rem;
+    right: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 0.75rem rgba(65, 66, 35, 0.4);
+    transition: all 0.2s; }
+    /* line 25, scss/base/_home.scss */
+    .header__language:hover {
+      background-color: #414223;
+      color: #f6f3ee; }
+    /* line 30, scss/base/_home.scss */
+    .header__language:active {
+      transform: translateY(2px); }
+
+/* line 37, scss/base/_home.scss */
+.banner__img {
+  height: auto;
+  width: 100%; }
+
+/* line 43, scss/base/_home.scss */
+.section-divider {
+  text-align: center; }
+  /* line 46, scss/base/_home.scss */
+  .section-divider__img {
+    width: 71px;
+    margin: 0 auto; }
+
+/* line 52, scss/base/_home.scss */
+.our-story__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 66, 35, 0.4);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  /* line 66, scss/base/_home.scss */
+  .our-story__popup__page {
+    border-radius: 0.75rem;
+    margin: auto;
+    height: auto;
+    width: 330px;
+    background-color: #f6f3ee;
+    padding: 1.25rem; }
+    /* line 76, scss/base/_home.scss */
+    .our-story__popup__page__heading {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0.5rem 0 0.5rem 0; }
+      /* line 82, scss/base/_home.scss */
+      .our-story__popup__page__heading h5 {
+        margin: 0; }
+    /* line 87, scss/base/_home.scss */
+    .our-story__popup__page__content p {
+      padding: 0 0 2rem 0; }
+
+@media (max-width: 335px) {
+  /* line 96, scss/base/_home.scss */
+  .our-story__popup__page__container {
+    max-width: 290px; } }
+
+/* line 104, scss/base/_home.scss */
+.gallery .container {
+  padding: 3.125rem 0; }
+
+/* line 110, scss/base/_home.scss */
+.contact__content {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center; }
+  /* line 116, scss/base/_home.scss */
+  .contact__content h4 {
+    height: auto;
+    margin: 0.47rem 1.25rem auto 0; }
+  /* line 121, scss/base/_home.scss */
+  .contact__content a,
+  .contact__content a:link,
+  .contact__content a:visited {
+    color: #7b7047; }
+    /* line 126, scss/base/_home.scss */
+    .contact__content a i,
+    .contact__content a:link i,
+    .contact__content a:visited i {
+      font-size: 1rem;
+      padding: 0.5625rem;
+      transition: all 0.2s; }
+      /* line 131, scss/base/_home.scss */
+      .contact__content a i:hover,
+      .contact__content a:link i:hover,
+      .contact__content a:visited i:hover {
+        color: #7a6f47;
+        transform: scale(1.05) translateY(-2px); }
+      /* line 136, scss/base/_home.scss */
+      .contact__content a i:active,
+      .contact__content a:link i:active,
+      .contact__content a:visited i:active {
+        transform: translateY(0);
+        color: #414223; }
+
+/* line 145, scss/base/_home.scss */
+.schedule {
+  background-color: #efead9; }
+  /* line 148, scss/base/_home.scss */
+  .schedule__heading {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center; }
+    /* line 154, scss/base/_home.scss */
+    .schedule__heading__img {
+      width: 2.9rem; }
+  /* line 162, scss/base/_home.scss */
+  .schedule__content ul li span:first-child {
+    width: 35%;
+    display: inline-block;
+    text-align: right;
+    margin-right: 1rem; }
+  /* line 169, scss/base/_home.scss */
+  .schedule__content ul li span:last-child {
+    width: 55%;
+    display: inline-block;
+    text-align: left; }
+
+/* line 180, scss/base/_home.scss */
+.wedding-party__profiles {
+  display: grid;
+  grid-template-columns: auto auto; }
+  /* line 184, scss/base/_home.scss */
+  .wedding-party__profiles--detail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1.5rem; }
+    /* line 191, scss/base/_home.scss */
+    .wedding-party__profiles--detail img {
+      max-width: 171px;
+      margin: 0 auto 1rem auto; }
+
+/* line 201, scss/base/_home.scss */
+.gift-registry__content a:last-child {
+  margin-top: 1rem; }
+
+/* line 208, scss/base/_home.scss */
+.location .container {
+  padding: 3.125rem 0 6.25rem 0; }
+  /* line 211, scss/base/_home.scss */
+  .location .container iframe {
+    width: 100%; }
+
+/* line 216, scss/base/_home.scss */
+.location__content {
+  padding-left: 1rem;
+  margin-bottom: 1rem; }
+
+/* line 222, scss/base/_home.scss */
+.rsvp__popup--second {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 66, 35, 0.4);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  /* line 237, scss/base/_home.scss */
+  .rsvp__popup--second .rsvp--second__heading {
+    height: 5%; }
+  /* line 241, scss/base/_home.scss */
+  .rsvp__popup--second .rsvp--second__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 4rem 0 5rem; }
+    /* line 249, scss/base/_home.scss */
+    .rsvp__popup--second .rsvp--second__content button {
+      margin-top: 0; }
+
+/* line 256, scss/base/_home.scss */
+.rsvp__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 66, 35, 0.4);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  /* line 270, scss/base/_home.scss */
+  .rsvp__popup__page {
+    border-radius: 0.75rem;
+    margin: auto;
+    height: auto;
+    max-width: 390px;
+    background-color: #f6f3ee;
+    padding: 1.75rem; }
+    /* line 280, scss/base/_home.scss */
+    .rsvp__popup__page__heading {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0.5rem 0 1.5rem 0; }
+      /* line 286, scss/base/_home.scss */
+      .rsvp__popup__page__heading h5 {
+        margin: 0; }
+    /* line 292, scss/base/_home.scss */
+    .rsvp__popup__page__content .rsvp-form {
+      display: flex;
+      flex-direction: column;
+      text-align: left; }
+      /* line 297, scss/base/_home.scss */
+      .rsvp__popup__page__content .rsvp-form__name, .rsvp__popup__page__content .rsvp-form__guests--number, .rsvp__popup__page__content .rsvp-form__guests--name {
+        margin-bottom: 2.5rem; }
+        /* line 301, scss/base/_home.scss */
+        .rsvp__popup__page__content .rsvp-form__name label, .rsvp__popup__page__content .rsvp-form__guests--number label, .rsvp__popup__page__content .rsvp-form__guests--name label {
+          display: inline-block;
+          width: 100%; }
+        /* line 305, scss/base/_home.scss */
+        .rsvp__popup__page__content .rsvp-form__name input, .rsvp__popup__page__content .rsvp-form__guests--number input, .rsvp__popup__page__content .rsvp-form__guests--name input {
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid #7b7047;
+          background: transparent;
+          outline: none;
+          padding-left: 0.25rem;
+          padding-bottom: 0.25rem;
+          line-height: 1.5rem; }
+      /* line 317, scss/base/_home.scss */
+      .rsvp__popup__page__content .rsvp-form__meal--group {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: auto auto; }
+      /* line 323, scss/base/_home.scss */
+      .rsvp__popup__page__content .rsvp-form input[type="radio"] {
+        background: transparent;
+        accent-color: #414223; }
+      /* line 328, scss/base/_home.scss */
+      .rsvp__popup__page__content .rsvp-form #rsvp-meal--other {
+        width: 70%;
+        outline: none;
+        background: transparent;
+        border-color: transparent;
+        border-bottom: 1px solid #7b7047;
+        padding: 0 0.25rem 0.25rem 0; }
+    /* line 338, scss/base/_home.scss */
+    .rsvp__popup__page__content p {
+      padding: 0 0 2rem 0; }
+
+@media screen and (max-width: 380px) {
+  /* Adjust the max-width for smaller screens */
+  /* line 347, scss/base/_home.scss */
+  .rsvp__popup__page {
+    max-width: 360px;
+    /* Adjust this value to your preference */ } }
+
+/* line 352, scss/base/_home.scss */
+.rsvp {
+  background-color: #efead9; }
+  /* line 355, scss/base/_home.scss */
+  .rsvp__heading {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center; }
+    /* line 360, scss/base/_home.scss */
+    .rsvp__heading h2 {
+      line-height: 100%;
+      margin: auto 1rem; }
+    /* line 365, scss/base/_home.scss */
+    .rsvp__heading__img {
+      width: 5.75rem;
+      margin: auto; }
+
+/* line 373, scss/base/_home.scss */
+.live-wedding .container {
+  padding-top: 6.25rem; }
+
+/* line 378, scss/base/_home.scss */
+.comment-delete-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 66, 35, 0.4);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  /* line 392, scss/base/_home.scss */
+  .comment-delete-popup__page {
+    border-radius: 0.75rem;
+    margin: auto;
+    height: auto;
+    max-width: 360px;
+    min-width: 280px;
+    min-width: 19rem;
+    background-color: #f6f3ee;
+    padding: 1.75rem; }
+  /* line 405, scss/base/_home.scss */
+  .comment-delete-popup__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem 0 0.5rem 0; }
+    /* line 411, scss/base/_home.scss */
+    .comment-delete-popup__heading h5 {
+      margin: 0; }
+  /* line 417, scss/base/_home.scss */
+  .comment-delete-popup__content label {
+    color: #414223;
+    display: block;
+    margin: 0;
+    text-align: left; }
+  /* line 423, scss/base/_home.scss */
+  .comment-delete-popup__content input {
+    width: 100%;
+    border-color: transparent;
+    border-bottom: 1px solid #7b7047;
+    outline: none;
+    background: transparent;
+    padding-left: 0.25rem;
+    padding-bottom: 0.25rem; }
+
+/* line 435, scss/base/_home.scss */
+#comment-form {
+  display: inline-block;
+  width: 100%; }
+  /* line 438, scss/base/_home.scss */
+  #comment-form label {
+    color: #414223;
+    display: block;
+    margin: 0; }
+  /* line 443, scss/base/_home.scss */
+  #comment-form input {
+    width: 100%;
+    border-color: transparent;
+    border-bottom: 1px solid #7b7047;
+    outline: none;
+    background: transparent;
+    padding-left: 0.25rem;
+    padding-bottom: 0.25rem; }
+  /* line 453, scss/base/_home.scss */
+  #comment-form textarea {
+    width: 100%;
+    border: 1px solid #7b7047;
+    outline: none;
+    padding: 0.5rem;
+    background: transparent;
+    border-radius: 0.5rem; }
+    /* line 461, scss/base/_home.scss */
+    #comment-form textarea::placeholder {
+      color: #c0b9a0;
+      padding: 0.25rem; }
+
+/* line 469, scss/base/_home.scss */
+.comment__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+/* line 476, scss/base/_home.scss */
+footer {
+  background-color: #efead9;
+  color: #414223;
+  box-shadow: 3px 0 20px rgba(65, 66, 35, 0.05); }
+  /* line 481, scss/base/_home.scss */
+  footer .link {
+    margin-bottom: 0.6rem;
+    transition: all 0.2s; }
+    /* line 485, scss/base/_home.scss */
+    footer .link:active, footer .link:hover {
+      color: #b1a577; }
+  /* line 490, scss/base/_home.scss */
+  footer a i {
+    padding-right: 1rem; }
+
+/* line 2, scss/components/_buttons.scss */
+.btn, .btn:visited, .btn:link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #414223;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.35rem;
+  display: inline-block;
+  width: 73%;
+  margin-top: 2rem; }
+
+/* line 16, scss/components/_buttons.scss */
+.btn-primary {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #414223;
+  border-radius: 1.5625rem;
+  transition: all 0.2s; }
+  /* line 22, scss/components/_buttons.scss */
+  .btn-primary:hover {
+    box-shadow: 0 0 1.875rem rgba(65, 66, 35, 0.25);
+    transform: translateY(-2px); }
+  /* line 27, scss/components/_buttons.scss */
+  .btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 0 0.625rem rgba(65, 66, 35, 0.25); }
+
+/* line 34, scss/components/_buttons.scss */
+.btn-width-100, .btn-width-100:visited, .btn-width-100:link {
+  width: 100%; }
+
+/* line 42, scss/components/_buttons.scss */
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #7b7047; }
+
+/* line 1, scss/components/_indicators.scss */
+.dot-indicators {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 0.5rem; }
+  /* line 10, scss/components/_indicators.scss */
+  .dot-indicators__single {
+    display: inline-block; }
+    /* line 13, scss/components/_indicators.scss */
+    .dot-indicators__single span {
+      display: block;
+      width: 12px;
+      height: 12px;
+      margin: 5px;
+      background-color: #d3c4ab;
+      border-radius: 100%;
+      cursor: pointer; }
+      /* line 22, scss/components/_indicators.scss */
+      .dot-indicators__single span:hover {
+        box-shadow: 0 0 8px #c3ba98; }
+
+/* line 29, scss/components/_indicators.scss */
+.dot-active > span {
+  background-color: #7b7047; }
+
+/* line 1, scss/components/_gallery.scss */
+.swiper {
+  width: 100%;
+  height: 41rem;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 7, scss/components/_gallery.scss */
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center; }
+    /* line 16, scss/components/_gallery.scss */
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+/* line 25, scss/components/_gallery.scss */
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0; }
+  /* line 30, scss/components/_gallery.scss */
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4; }
+  /* line 36, scss/components/_gallery.scss */
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1; }
+
+/* line 2, scss/components/_weddingparty.scss */
+.wedding-party .container {
+  padding-top: 6.25rem; }
+
+/* line 5, scss/components/_weddingparty.scss */
+.wedding-party .swiper {
+  height: 100%; }
+
+/* line 8, scss/components/_weddingparty.scss */
+.wedding-party h2 {
+  margin-bottom: 1.75rem; }
+
+/* line 11, scss/components/_weddingparty.scss */
+.wedding-party__profiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  cursor: grab; }
+  /* line 16, scss/components/_weddingparty.scss */
+  .wedding-party__profiles--detail {
+    margin: 0 1.5rem 1.5rem 1.5rem; }
+    /* line 19, scss/components/_weddingparty.scss */
+    .wedding-party__profiles--detail img {
+      max-width: 100%; }
+
+@media screen and (max-width: 300px) {
+  /* line 26, scss/components/_weddingparty.scss */
+  .wedding-party__profiles {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.5rem; } }
+
+/* line 32, scss/components/_weddingparty.scss */
+.swiper-pagination {
+  position: inherit;
+  margin-top: 0.5rem; }
+  /* line 36, scss/components/_weddingparty.scss */
+  .swiper-pagination-bullet {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #968b62; }
+    /* line 41, scss/components/_weddingparty.scss */
+    .swiper-pagination-bullet-active {
+      background-color: #978c63; }
+
+/* line 1, scss/components/_calendar.scss */
+.calendar {
+  padding-bottom: 1.5rem; }
+  /* line 4, scss/components/_calendar.scss */
+  .calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center; }
+    /* line 10, scss/components/_calendar.scss */
+    .calendar ul .sunday {
+      color: #b97a55 !important; }
+    /* line 14, scss/components/_calendar.scss */
+    .calendar ul li {
+      position: relative;
+      width: calc(100% / 7);
+      z-index: 1;
+      margin-bottom: 1.25rem; }
+    /* line 21, scss/components/_calendar.scss */
+    .calendar ul li::before {
+      content: "";
+      position: absolute;
+      width: 2.5rem;
+      height: 2.5rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      border-radius: 100%; }
+    /* line 34, scss/components/_calendar.scss */
+    .calendar ul.weeks li {
+      text-transform: capitalize;
+      color: #414223; }
+    /* line 40, scss/components/_calendar.scss */
+    .calendar ul.days li.active {
+      color: #f3f3f3; }
+      /* line 42, scss/components/_calendar.scss */
+      .calendar ul.days li.active::before {
+        background: #978c63; }
+      /* line 46, scss/components/_calendar.scss */
+      .calendar ul.days li.active.sunday {
+        color: #b97a55; }
+    /* line 51, scss/components/_calendar.scss */
+    .calendar ul.days li.inactive {
+      color: #c3ba98; }
+    /* line 55, scss/components/_calendar.scss */
+    .calendar ul.days li.inactive.sunday {
+      color: #e6cfc1 !important; }

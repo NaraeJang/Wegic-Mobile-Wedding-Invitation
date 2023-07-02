@@ -1,0 +1,493 @@
+.header {
+  width: 100%;
+  background: url(/dist/images/heading-deco.svg) no-repeat top/100%;
+  margin: 0;
+  padding-bottom: 3.125rem;
+  position: relative;
+
+  &__container {
+    padding: 0 1rem;
+  }
+
+  &__language {
+    position: absolute;
+    padding: 0 9px;
+    background: $cc-bg-main;
+    border-radius: 100%;
+    top: 1rem;
+    right: 1rem;
+    text-decoration: none;
+
+    cursor: pointer;
+    box-shadow: 0 0 0.75rem rgba($cc-primary-dark, 0.4);
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $cc-primary-dark;
+      color: $cc-bg-main;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}
+
+.banner {
+  &__img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.section-divider {
+  text-align: center;
+
+  &__img {
+    width: 71px;
+    margin: 0 auto;
+  }
+}
+
+.our-story__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($cc-primary-dark, 0.4);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &__page {
+    border-radius: 0.75rem;
+    margin: auto;
+    height: auto;
+
+    width: 330px;
+    background-color: $cc-bg-main;
+
+    padding: 1.25rem;
+
+    &__heading {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0.5rem 0 0.5rem 0;
+
+      h5 {
+        margin: 0;
+      }
+    }
+
+    &__content p {
+      padding: 0 0 2rem 0;
+    }
+  }
+}
+
+@media (max-width: 335px) {
+  .our-story__popup {
+    &__page {
+      &__container {
+        max-width: 290px;
+      }
+    }
+  }
+}
+
+.gallery {
+  & .container {
+    padding: 3.125rem 0;
+  }
+}
+
+.contact {
+  &__content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+
+    h4 {
+      height: auto;
+      margin: 0.47rem 1.25rem auto 0;
+    }
+
+    a,
+    a:link,
+    a:visited {
+      color: $cc-primary;
+
+      i {
+        font-size: 1rem;
+        padding: 0.5625rem;
+        transition: all 0.2s;
+
+        &:hover {
+          color: darken($cc-primary, 0.2);
+          transform: scale(1.05) translateY(-2px);
+        }
+
+        &:active {
+          transform: translateY(0);
+          color: $cc-primary-dark;
+        }
+      }
+    }
+  }
+}
+
+.schedule {
+  background-color: $cc-bg-olive;
+
+  &__heading {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+
+    &__img {
+      width: 2.9rem;
+    }
+  }
+
+  &__content {
+    ul {
+      li {
+        span:first-child {
+          width: 35%;
+          display: inline-block;
+          text-align: right;
+          margin-right: 1rem;
+        }
+
+        span:last-child {
+          width: 55%;
+          display: inline-block;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.wedding-party {
+  &__profiles {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    &--detail {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+
+      img {
+        max-width: 171px;
+        margin: 0 auto 1rem auto;
+      }
+    }
+  }
+}
+
+.gift-registry {
+  &__content {
+    a:last-child {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.location {
+  .container {
+    padding: 3.125rem 0 6.25rem 0;
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.rsvp__popup--second {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($cc-primary-dark, 0.4);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .rsvp--second {
+    &__heading {
+      height: 5%;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      padding: 4rem 0 5rem;
+
+      button {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.rsvp__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($cc-primary-dark, 0.4);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &__page {
+    border-radius: 0.75rem;
+    margin: auto;
+    height: auto;
+
+    max-width: 390px;
+    background-color: $cc-bg-main;
+
+    padding: 1.75rem;
+
+    &__heading {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0.5rem 0 1.5rem 0;
+
+      h5 {
+        margin: 0;
+      }
+    }
+
+    &__content {
+      .rsvp-form {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        &__name,
+        &__guests--number,
+        &__guests--name {
+          margin-bottom: 2.5rem;
+          label {
+            display: inline-block;
+            width: 100%;
+          }
+          input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid $cc-primary;
+            background: transparent;
+            outline: none;
+            padding-left: 0.25rem;
+            padding-bottom: 0.25rem;
+            line-height: 1.5rem;
+          }
+        }
+
+        &__meal--group {
+          display: grid;
+          gap: 1rem;
+          grid-template-columns: auto auto;
+        }
+
+        input[type="radio"] {
+          background: transparent;
+          accent-color: $cc-primary-dark;
+        }
+
+        #rsvp-meal--other {
+          width: 70%;
+          outline: none;
+          background: transparent;
+          border-color: transparent;
+          border-bottom: 1px solid $cc-primary;
+          padding: 0 0.25rem 0.25rem 0;
+        }
+      }
+
+      p {
+        padding: 0 0 2rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  /* Adjust the max-width for smaller screens */
+  .rsvp__popup__page {
+    max-width: 360px; /* Adjust this value to your preference */
+  }
+}
+
+.rsvp {
+  background-color: $cc-bg-olive;
+
+  &__heading {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+
+    h2 {
+      line-height: 100%;
+      margin: auto 1rem;
+    }
+
+    &__img {
+      width: 5.75rem;
+      margin: auto;
+    }
+  }
+}
+
+.live-wedding {
+  .container {
+    padding-top: 6.25rem;
+  }
+}
+
+.comment-delete-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($cc-primary-dark, 0.4);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &__page {
+    border-radius: 0.75rem;
+    margin: auto;
+    height: auto;
+    max-width: 360px;
+    min-width: 280px;
+
+    min-width: 19rem;
+    background-color: $cc-bg-main;
+
+    padding: 1.75rem;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem 0 0.5rem 0;
+
+    h5 {
+      margin: 0;
+    }
+  }
+
+  &__content {
+    label {
+      color: $cc-primary-dark;
+      display: block;
+      margin: 0;
+      text-align: left;
+    }
+    input {
+      width: 100%;
+      border-color: transparent;
+      border-bottom: 1px solid $cc-primary;
+      outline: none;
+      background: transparent;
+      padding-left: 0.25rem;
+      padding-bottom: 0.25rem;
+    }
+  }
+}
+
+#comment-form {
+  display: inline-block;
+  width: 100%;
+  label {
+    color: $cc-primary-dark;
+    display: block;
+    margin: 0;
+  }
+  input {
+    width: 100%;
+    border-color: transparent;
+    border-bottom: 1px solid $cc-primary;
+    outline: none;
+    background: transparent;
+    padding-left: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid $cc-primary;
+    outline: none;
+    padding: 0.5rem;
+    background: transparent;
+    border-radius: 0.5rem;
+
+    &::placeholder {
+      color: lighten($cc-primary-light, 20%);
+      padding: 0.25rem;
+    }
+  }
+}
+
+.comment {
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+footer {
+  background-color: $cc-bg-olive;
+  color: $cc-primary-dark;
+  box-shadow: 3px 0 20px rgba($cc-primary-dark, 0.05);
+
+  .link {
+    margin-bottom: 0.6rem;
+    transition: all 0.2s;
+
+    &:active,
+    &:hover {
+      color: lighten($color: $cc-primary, $amount: 20%);
+    }
+  }
+  a i {
+    padding-right: 1rem;
+  }
+}

@@ -1,0 +1,45 @@
+.wedding-party {
+  .container {
+    padding-top: 6.25rem;
+  }
+  .swiper {
+    height: 100%;
+  }
+  h2 {
+    margin-bottom: 1.75rem;
+  }
+  &__profiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    cursor: grab;
+
+    &--detail {
+      margin: 0 1.5rem 1.5rem 1.5rem;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 300px) {
+  .wedding-party__profiles {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.5rem;
+  }
+}
+
+.swiper-pagination {
+  position: inherit;
+  margin-top: 0.5rem;
+
+  &-bullet {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: darken($cc-primary-light, 0.3);
+
+    &-active {
+      background-color: $cc-primary-light;
+    }
+  }
+}
