@@ -1,10 +1,8 @@
-import ourStoryClassAdd from "./utils/ourStorySection.js";
-
 // ****** SELECT ITEMS **********
-const ourStoryBtn = document.getElementById("our-story-btn");
+const ourStoryPopup = document.querySelector(".our-story__popup");
 const rsvpPopup = document.querySelector(".rsvp__popup");
 const rsvpPopupLast = document.querySelector(".rsvp__popup--second");
-
+const ourStoryBtn = document.getElementById("our-story-btn");
 const closeBtns = document.querySelectorAll(".close-icon");
 const weddingPartyContainer = document.querySelector(
   ".wedding-party__profiles"
@@ -74,14 +72,13 @@ const days = [
   "Saturday",
 ];
 
-/*====================================
-======================================
-EVENT LISTENERS
-======================================
-====================================*/
-
+/*
+// ===========
+// GENERAL FUNCTIONS
+// ===========
+*/
 ourStoryBtn.addEventListener("click", function () {
-  ourStoryClassAdd();
+  ourStoryPopup.classList.add("show-popup");
 });
 
 closeBtns.forEach((closeBtn) => {

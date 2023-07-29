@@ -62,6 +62,8 @@
   z-index: 10;
   overflow-y: auto;
   overflow-x: hidden;
+  opacity: 0;
+  transition: $transition-popup;
 
   &__page {
     border-radius: 0.75rem;
@@ -232,6 +234,8 @@
   z-index: 10;
   overflow-y: auto;
   overflow-x: hidden;
+  opacity: 0;
+  transition: $transition-popup;
 
   .rsvp--second {
     &__heading {
@@ -266,6 +270,8 @@
   z-index: 10;
   overflow-y: auto;
   overflow-x: hidden;
+  opacity: 0;
+  transition: $transition-popup;
 
   &__page {
     border-radius: 0.75rem;
